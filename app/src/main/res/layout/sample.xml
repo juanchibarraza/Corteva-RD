@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/titulo"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recuerde utilizar los EPPs necesarios para realizar la tarea:"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:drawableRight="@mipmap/fotoalerta"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:text="- Anteojos. \n- Gorra o sombrero. \n- Calzado de seguridad. \n- Polainas (en zonas donde se recomienda). \n- Hidrátese y tome descansos frecuentes. \n- Protector solar (recomendado). \n- Repelente para insectos (recomendado). \n"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

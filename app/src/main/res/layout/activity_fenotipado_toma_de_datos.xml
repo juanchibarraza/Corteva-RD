@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Estadío fenológico:"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerFenotipadoEstadioFenologico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:text="Traits registrados: "
+                    android:textColor="#000000"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/btnTrait"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/ic_plus_thick"
+                    android:drawableTint="@color/white"/>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinnerTomaDatosTrait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/trait">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Operarios:"
+                    android:textColor="#000000"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etFenotipadoOperarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#808080"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Parcelas fenotipadas:"
+                    android:textColor="#000000"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etFenotipadoTomaDeDatosParcelasFenotipadas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#808080"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="AOI Score:"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerFenotipadoAOIScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Grado de enmalezamiento:"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerFenotipadoGradoEnmalezamientoDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Presión de insectos:"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerFenotipadoPresionInsectos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Grado Estrés:"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerFenotipadoGradoEstres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="Observaciones Toma de Datos:"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etFenotipadoObservacionTomaDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorHint="#808080"
+                android:textSize="20sp"
+                android:maxLength="250"
+                android:paddingTop="0dp"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/botonFotoTomaDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_camera"
+                    android:drawableTint="@color/white"
+                    android:text="Capturar"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/botonElegirFotoTomaDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_paperclip"
+                    android:drawableTint="@color/white"
+                    android:text="Adjuntar"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <!--<ImageView
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/botonElegirFotoTomaDatos"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="10dp"/>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"
+                android:visibility="gone">
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageSwitcher"
+                android:visibility="gone">
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/botonEnviarFenotipadoDatos"
+                android:text="Enviar"
+                android:textSize="20dp"
+                android:layout_gravity="right"
+                android:drawableRight="@drawable/ic_email_send"
+                android:drawableTint="@color/white"/>
+
+            <!--<TextView
+                android:id="@+id/relleno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:typeface="sans" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/corteva3" />
+
+</RelativeLayout>

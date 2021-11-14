@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Fecha:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inicioFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorHint="#808080"
+                android:textSize="20sp"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_calendar_month" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Campaña:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerInicioCampana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Estación:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerInicioEstacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Cultivo:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerInicioCultivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Localidad:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerInicioLocalidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Actividad:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerInicioActividad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/Linear_Layout_fenotipado"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@color/colorSubtitles"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:text="Seleccione sub-actividad" />
+
+            <Spinner
+                android:id="@+id/spinnerFenotipado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/botonSiguienteInicio"
+            android:text="Siguiente"
+            android:textSize="20dp"
+            android:layout_gravity="right"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:drawableTint="@color/white"/>
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/corteva3" />
+
+</RelativeLayout>

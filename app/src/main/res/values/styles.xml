@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- theme para el login que usa blanco -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#3A73C2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- cuando se esta escribiendo sobre un editText -->
+        <item name="colorAccent">@color/white</item>
+        <!-- cuando no se está escribiendo sobre le editText -->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <!-- color de la linea de los editText -->
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!-- Alert Dialog -->
+    <style name="MyDialogTheme" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Background Color-->
+        <item name="android:background">#FAD201</item>
+        <!-- Text Color for title and message -->
+        <item name="colorOnSurface">#000000</item>
+        <!-- Style for positive button -->
+        <item name="buttonBarPositiveButtonStyle">@color/colorPrimary</item>
+        <!-- Style for negative button -->
+        <item name="buttonBarNegativeButtonStyle">@color/colorPrimary</item>
+    </style>
+
+
+</resources>
